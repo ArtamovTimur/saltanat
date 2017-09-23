@@ -1,0 +1,270 @@
+@import url("4282.ttf");
+  .wrapper {}
+  * {
+    margin: 0;
+    user-select: none;
+    padding: 0;
+  }
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .clear {
+        clear: both;
+    }
+    .curtain-wrap {
+      position: relative;
+    }
+    .top-menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: #fedb36;
+      z-index: 9999999;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.7);
+      font-family: 'Andantino script', sans-serif;
+      font-size: 36px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .top-menu a {
+      text-decoration: none;
+      color: #fedb36;
+    }.top-menu a:hover { color: #fff; }
+    .services {
+      position: relative;
+    }
+    .top-menu .services:hover .hover {
+          display: block;
+          
+    }
+    .hover{
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        align-items: center;
+        right: -80px;
+        width: 250px;
+        flex-direction: column;
+        display: none;
+        overflow: hidden;
+        position: absolute;
+    }
+    .hover span {
+      display: inline-block;
+      padding-top: 20px;
+    }
+    .hover a {
+      text-decoration: none;
+      color: #fedb36;
+    }.hover a:hover {
+      color: #fff;
+    }
+    .phone {
+        padding-bottom: 30px;
+        background: url('../img/phone-border.png') center bottom no-repeat;
+    }
+
+    .top-menu span:hover {
+        padding-bottom: 20px;
+        background: url('../img/hover.png') center bottom no-repeat;
+        color: #fff;
+    }.top-menu span:last-child:hover{
+      background: none;
+      padding-bottom: 0;
+    }
+
+    .logo-top-wrap {
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        margin-left: -260px;
+        padding: 15px 15px 0 15px;
+        border: 20px solid #fff;
+        z-index: 9999999;
+        border-bottom: none;
+        text-align: center;
+    }
+    .logo-top {
+        width: 450px;
+        display: inline-block;
+        height: 245px;
+        background: url('../img/logo.png');
+    }
+    .two-block {
+        height: 710px;
+        background: url('../img/two-block-bg.png') no-repeat;
+        background-size: cover;
+        position: relative;
+        font-family: 'Andantino script', sans-serif;
+    } 
+    .white-line {
+        height: 20px;
+        background: #fff;
+    }
+    .wrap {
+        position: absolute;
+        font-size: 34px;
+        text-align: center;
+        padding-bottom: 10px;
+        overflow: hidden;
+        line-height: 0.8;
+    }
+    .main-text {
+      font-size: 56px;
+    }
+    .two-border {
+      position: absolute;
+      top: 1%;
+      width: 940px;
+      left: 50%;
+      margin-left: -470px;
+      background: url('../img/top-border.png') center center no-repeat;
+      height: 74px;
+    }
+    .two-border-b {
+        position: absolute;
+        bottom: 1%;
+        width: 940px;
+        left: 50%;
+        margin-left: -470px;
+        background: url('../img/top-border.png') center center no-repeat;
+        height: 74px;
+    }
+    .one-wrap {
+      top: 60px;
+      left: 250px;
+    } 
+    .two-wrap {
+      top: 60px;
+      right: 250px;
+    } 
+    .three-wrap {
+      top: 277px;
+      left: 190px;
+    }
+    .four-wrap {
+      top: 150px;
+      left: 50%;
+      margin-left: -141.5px;
+      padding-bottom: 5px;
+    }
+    .five-wrap {
+      top: 280px;
+      right: 190px;
+    }
+    .six-wrap {
+      bottom: 110px;
+      left: 363px;
+    }
+    .seven-wrap {
+      bottom: 80px;
+      right: 320px;
+    }
+    
+    .three-block {
+        text-align: center;
+        font-size: 36px;   
+        font-family: 'Andantino script', sans-serif;
+        background: url('../img/three-block-bg.png');
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    .three-top-border {
+      margin-top: 10px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+      display: inline-block;
+      background: url('../img/three-top-border.png') no-repeat center top;
+    }
+
+    .three-bottom-border {
+        padding: 25px 120px;
+        display: inline-block;
+        background: url('../img/three-bottom-border.png') no-repeat center bottom;
+    }
+    
+    .three-block-title {
+        font-weight: normal;
+    }
+
+    .four-block {
+        width: 100%;
+        text-align: center;
+        font-family: 'Andantino script', sans-serif;
+        background: url('../img/four-block-bg.png') no-repeat center center;
+        background-size: cover;
+        padding: 50px;
+        padding-bottom: 30px;
+    }
+    .four-block-title {
+        padding: 35px;
+        font-size: 50px;
+        margin-bottom: 50px;
+        background: url('../img/title-border.png') no-repeat center bottom;
+    }
+
+
+    .four-block-bottom-border {
+        width: 400px;
+        margin: 0 auto;
+        padding: 14px 0;
+        background: url('../img/three-bottom-border.png') no-repeat center center;
+    }
+
+    .five-block {
+        width: 100%;
+        background: url('../img/five-block-bg.png') no-repeat center center;
+        padding: 20px 0;
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    .footer-logo {
+        width: 100%;
+        height: 350px;
+        background: url('../img/footer-logo.png') no-repeat center center;
+        background-size: contain;
+    }
+   .footer-bottom-block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+   }
+   .footer-left-block {
+        display: inline-block;
+   }
+   .footer-right-block {
+        display: inline-block;
+        width: 50%;
+        line-height: 1.7;
+        font-size: 34px;
+        color: #fedb36;
+        font-family: 'Andantino script', sans-serif;
+        text-align: center;  
+   }
+
+   .footer-top-border {
+        background:  url('../img/footer-bottom.png') no-repeat center center;
+        width: 238px;
+        margin: 0 auto;
+        height: 51px;
+   }
+   .footer-bottom-border {
+        background: url('../img/footer-top.png') no-repeat center center;
+        width: 427px;
+        margin: 0 auto;
+        height: 46px;
+   }
+    .insta {
+        padding-left: 40px;
+        display: inline-block;
+        background: url('../img/insta.png') no-repeat left center;
+    }
+
+    .contacts-title {
+        font-size: 52px;
+    }

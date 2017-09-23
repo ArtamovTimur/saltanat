@@ -1,0 +1,44 @@
+
+.slider {
+	width: 100%;
+    height: 550px;
+    height: auto;
+}
+
+.slider-img {
+    width: 100%;
+    height: 400px;
+    background: url('../img/img01.jpg') no-repeat center center;
+    transition: 1s;
+    background-size: cover !important;
+}
+.buttons {
+    clear: both;
+    height: 30px;
+    text-align: center;
+    width: 120px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    background: #E5C0DC;
+}
+
+.buttons span {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active-btn {
+   background: #C570AA !important;
+   border: 3px solid #fff !important;
+   display: inline-block !important;
+   width: 20px !important;
+   height: 20px !important;
+   border-radius: 50%;
+} 

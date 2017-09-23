@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saltanat Sarayi</title>
+  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+
+ <link rel="stylesheet" href="css/main.css">
+  <link href="http://allfont.ru/allfont.css?fonts=andantino-script" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/slider.css">
+<script src="js/slider.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
+<script src="https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+  <body>
+    <div class="wrapper" id="fullpage">
+        <div class="curtain-wrap">
+                <div class="large-12 columns section">
+                    <div class="twentytwenty-container">
+                        <div class="top-menu">
+                            <span><a href="#">Главная</a></span>
+                            <span class="services">
+                                    Услуги
+                                    <div class="hover">
+                                         <span><a href="#">Зал торжеств</a></span>
+                                         <span><a href="#">Конференц зал</a></span>
+                                         <span><a href="#">Lounge Bar</a></span>
+                                         <span><a href="">Паб Библиотека</a></span>
+                                    </div>
+                            </span>
+                            <span><a href="#">Галерея</a></span>
+                            <span><a href="#">Контакты</a></span>
+                            <div class="phone"><a href="#">Заказать звонок</a></div>
+                        </div>
+                        <img src="img/1_1.jpg" />
+                        <img src="img/1_2.jpg" />
+
+                         <div class="logo-top-wrap">
+                            <div class="logo-top"></div>
+                         </div><!-- LOGO-TOP-WRAP END-->
+
+                    </div><!-- TWENTYTWENTY END -->
+                </div><!-- COLUMN END -->
+                
+               
+
+                </div><!-- CURTAIN WRAP END -->
+                <div class="clear"></div>
+                <div class="white-line"></div>
+                <div class="clear"></div>
+                <div class="two-block section">
+                    <div class="two-border"></div>
+                        <div class="one-wrap wrap">
+                            <img src="img/icon1.png" alt="" width="55%">
+                            <div class="one-text">Лучший сервис <br> обслуживания</div>
+                        </div>
+                         <div class="two-wrap wrap">
+                            <img src="img/icon2.png" alt="" width="55%">
+                            <div class="two-text">Лучшая кухня</div>
+                        </div>
+                         <div class="three-wrap wrap">
+                            <img src="img/icon3.png" alt="" width="50%">
+                            <div class="three-text">
+                                Единный комплекс<br>
+                                Зал торжеств<br>
+                                Lounge Bar<br>
+                                Караоке<br>
+                                Конференц зал
+                            </div>
+                        </div>
+                         <div class="four-wrap wrap">
+                            <img src="img/icon4.png" alt="" width="60%">
+                            <div class="four-text"><span class="main-text">Роскошная</span> <br> обстановка в 
+                                лучшем <br>ресторане города</div>
+                        </div>
+                         <div class="five-wrap wrap">
+                            <img src="img/icon5.png" alt="" width="38%">
+                            <div class="five-text">Индивидуальный подход <br>
+                            к каждому клиенту</div>
+                        </div>
+                         <div class="six-wrap wrap">
+                            <img src="img/icon6.png" alt="" width="38%">
+                            <div class="six-text">Охрана и видеонаблюдение</div>
+                        </div>
+                         <div class="seven-wrap wrap">
+                            <img src="img/icon7.png" alt="" width="38%">
+                            <div class="seven-text">Просторная охраняемая <br>парковка</div>
+                        </div>
+                         <div class="two-border-b"></div>
+                    </div><!-- TWO BLOCK END -->
+                    <div class="three-block clearfix section">
+                        <div class="three-top-border">
+                            Наши услуги
+                        </div>
+                            <div class="slider clearfix">
+                                <div class="slider-img"></div>
+                                <div class="buttons">
+                                    <span class="select active-btn"></span>
+                                    <span class="select "></span>
+                                    <span class="select "></span>
+                                </div>
+                           </div><!-- SLIDER END -->  
+                            <h2 class="three-block-title">Зал торжеств на 1000 мест</h2>
+                            <p class="three-block-text">С большой любовью проработана каждая деталь в интерьере,
+                                чтобы сделать <br>Ваше торжество по-настоящему прекрасным!</p>
+                                 <div class="three-bottom-border"></div>
+                    </div><!-- THREE END -->
+
+                    <div class="four-block section">
+                     <div class="four-block-title">
+                         Фотогалерея
+                     </div>
+                    <div class="3d-slider">
+                        <div id="example">
+                            <carousel-3d>
+                                <slide :index="0">
+                                  <img src="img/img01.jpg">
+                                </slide>
+                                <slide :index="1">
+                                  <img src="img/img02.jpg">
+                                </slide>
+                                <slide :index="2">
+                                  <img src="img/img03.jpg">
+                                </slide>
+                                <slide :index="3">
+                                  <img src="img/img03.jpg">
+                                </slide>
+                                 <slide :index="4">
+                                  <img src="img/img03.jpg">
+                                </slide>
+                              </carousel-3d>
+                        </div>
+                    </div>
+                    <div class="four-block-bottom-border"></div>
+                    </div><!-- FOUR-BLOCK END -->
+                    <div class="five-block">
+                        <div class="footer-bottom-block">
+                            <div class="footer-left-block">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6defec968c1b46f295d90ccb1140b94b4db0b73c854e4fab34fad4682e9a21d8&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                            <div class="footer-right-block">
+                                <div class="footer-top-border"></div>
+                                    <span class="contacts-title">Контакты и адрес</span>
+                                    <br>
+                                    Справки по бронированию 8(7132) 24-07-77, 
+                                    8 701 920 4343
+                                    <div class="insta">@offical_saltanat_saray_aktobe</div><br>
+                                    Адрес: г. Актобе ул.Санкибай Батыра 76А
+                                    <div class="footer-bottom-border">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+    </div><!-- WRAP END -->
+    
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(window).ready(function(){
+      $('.carousel-3d-container').css('height', '500');
+      $('.carousel-3d-slide').css({
+        width: '650',
+        height: '400'
+      });
+      $('.carousel-3d-slider').css('width', '720');
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+      $('.twentytwenty-before').attr({
+        style: 'clip: rect(0px 745px 758px 0px);'
+      });
+      $('.twentytwenty-handle').attr({
+       style: 'left: 745px;'
+      });
+      $('.twentytwenty-container').css('height', $(window).height());
+       $('.twentytwenty-before').css('height', $(window).height());
+       $('.twentytwenty-after').css('height', $(window).height());
+    }); 
+    
+    </script>
+
+    <script>
+        
+    new Vue({
+      el: '#example',
+      data: {
+        slides: 5
+      },
+      components: {
+        'carousel-3d': Carousel3d.Carousel3d,
+        'slide': Carousel3d.Slide
+      }
+    })
+    </script>
+  </body>
+</html>
